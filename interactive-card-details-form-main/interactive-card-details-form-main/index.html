@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap">
+  
+  <title>Frontend Mentor | Interactive card details form</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+<div class="container">
+<div class="left-container">
+  <div class="front-card">
+    <div class="circle">
+      <img src="../interactive-card-details-form-main/images/card-logo.svg" alt="">
+    </div>
+      <img src="/interactive-card-details-form-main/images/bg-card-front.png" alt="pg1" id="front-card">
+      <p class="card-number">0000 0000 0000 0000</p>
+      <div class="name-date">
+        <p class="card-name">Jane Appleseed</p>
+        <p class="Date">00/00</p>
+      </div>
+     
+  </div>
+  <div class="back-card">
+    <p> 000</p>
+    <img src="/interactive-card-details-form-main/images/bg-card-back.png" alt="pg2" id="back-card">
+  </div>
+</div>
+<div class="right-container">
+  <form action="">
+
+    <fieldset class="section-1">
+      <label for="Cardholder-Name">Cardholder Name</label>
+      <input type="text"  id="inpu-1" placeholder="e.g. Jane Appleseed" required>
+    </fieldset>
+
+  <fieldset class="section-2">
+    <label for="Card-Number">Card Number</label>
+    <input type="text"  id="input-2" placeholder="e.g. 1234 5678 9123 0000" required>
+  </fieldset>
+
+  <fieldset class="section-3">
+    <div class="exp-1">
+      <label for="Exp-Date">Exp. Date (MM/YY)</label>
+    <input type="text"  id="input0" placeholder="MM" required>
+    <input type="text"  id="input0" placeholder="YY" required>
+    </div>
+    
+    <div class="cvc-1">
+      <label for="Cardholder-Name">CVC</label>
+    <input type="text" id="input3" placeholder="e.g. 123" required>
+    </div>
+    
+  </fieldset>
+
+  
+
+  <fieldset class="section-4">
+    <input type="submit" class="confirm-btn" value="Confirm" readonly>
+  </fieldset>
+
+  </form>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,337 @@
+
+
+
+body{
+    padding:0;
+    margin: 0;
+    background-color: hsla(270, 3%, 87%, 0.368);
+    font-family: 'Space Grotesk';
+    font-size: 16px;
+ 
+}
+.left-container{
+   display: block;
+   background-image: url('../images/bg-main-desktop.png');
+   background-repeat: no-repeat;
+   width: 40%;
+   height: 780px;
+
+}
+.container{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.right-container{
+   height: fit-content;
+   margin-left: auto;
+   margin-right: 12.5rem;
+   margin-top: 17rem;
+   font-size: 1.125rem;
+
+}
+label{
+    display: flex;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.front-card{
+    position: relative;
+    top: 8rem;
+    left:14rem;
+    color:aliceblue;
+}
+.back-card{
+    position: relative;
+    top: 7rem;
+    left:18rem;
+    width: fit-content;
+    color: white;
+}
+.card-number{
+    position: absolute;
+    top: 5.563rem;
+    left: 1.875rem;
+    font-size: 1.7rem;  
+}
+.name-date{
+    display: flex;
+    padding: px;
+    gap: 10.313rem;
+    /* background-color: black; */
+    width: 23.125rem;
+    position: relative;
+    top: -3.938rem;
+    left: 1.875rem;
+}
+#front-card{
+    width:24.313rem;
+}
+#back-card{
+    width:24.313rem;
+}
+
+
+.circle{
+    position: absolute;
+    top:1.563rem;
+    left: 1.875rem;
+    
+}
+.circle img{
+    width: 4.7rem;
+}
+.back-card p{
+    position: absolute;
+    top:4.875rem;
+    left: 19.563rem;
+}
+.section-3{
+
+    display: flex;
+    gap: 0.938rem;
+    font-size: 0.65rem;
+    font-weight: 200;
+    border: none;
+    word-spacing: 0.188rem;
+    letter-spacing: 0.063rem;
+    
+}
+.section-1{
+    border: none;
+    font-size: .75rem;
+    font-weight: 200;
+    word-spacing: 0.313rem;
+    letter-spacing: .063rem;
+}
+.section-3 label{
+    font-size: 0.75em;
+}
+.section-2 {
+    border: none;
+    font-size: .75rem;
+    font-weight: 200;
+    word-spacing: .313rem;
+    letter-spacing: .063rem;
+}
+.section-2 input{
+    width: 25rem;
+    height: 2.5rem;
+    border-radius: .313rem;
+    border: solid hsl(279, 6%, 55%) 1px;
+    color: hsl(0, 0%, 7%);
+    background-color: hsl(0, 0%, 100%);
+}
+.section-1 input{
+    width: 25rem;
+    height: 2.5rem;
+    border-radius: .313rem;
+    border: solid hsl(279, 6%, 55%) 1px;
+    color: hsl(0, 0%, 4%);
+    /* background-color: hsl(270, 27%, 96%); */
+}
+.exp-1{
+    border: none;
+    font-size: 1rem;
+    font-weight: 200;
+}
+.exp-1 input{
+    width: 6.25rem;
+    height: 2.5rem;
+    border-radius: .313rem;
+    border: solid hsl(279, 6%, 55%) 1px;
+    color: hsl(0, 0%, 2%);
+    background-color: hsl(0, 0%, 100%)
+}
+.cvc-1{
+    font-size: .98rem;
+    font-weight: 200;
+}
+.cvc-1 input{
+    width: 9.62rem;
+    height: 2.5rem;
+    border-radius: .313rem;
+    border: solid hsl(279, 6%, 55%) 1px;
+    color: hsl(0, 0%, 4%);
+    background-color: hsl(0, 0%, 100%)
+
+}
+.section-4{
+    border: none;
+}
+.section-4 input{
+    color: aliceblue;
+    width: 25.625rem;
+    height: 2.5rem;
+    border-radius: .313rem;
+    border: solid hsl(279, 6%, 55%) 1px;
+    background-color: hsl(278, 68%, 11%);
+}
+.cvc-1 input::placeholder{
+    font-size: 1rem;
+    padding-left: 0.6rem;
+  
+}
+.exp-1 input::placeholder{
+    font-size: 1rem;
+    padding-left: 0.6rem;
+    letter-spacing: 0.063rem;
+}
+.section-1 input::placeholder{
+    font-size: 1rem;
+    padding-left: 0.6rem;
+    letter-spacing: 0.063rem;
+}
+.section-2 input::placeholder{
+    font-size: 1rem;
+    padding-left: 0.6rem;
+    letter-spacing: 0.063rem;
+}
+.section-4 input{
+    font-weight: 600;
+    letter-spacing: 0.063rem;
+}
+label{
+    padding-bottom:.313rem ;
+}
+input[type=text]{
+   padding-left: 12px;
+    font-size: 18px;
+     font-family: 'Space Grotesk';
+}
+@media  (width =1440px){
+form fieldset{
+    padding-bottom: 20px;
+ }
+ input[type="submit"]{
+    height: 3.87rem;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-family: 'Space Grotesk';
+ }
+  fieldset{
+        width: fit-content;
+    }
+}
+@media  (width <376px){
+  
+    body{
+        background-color:white;
+        font-size: 10px;
+        margin: 0;
+        padding: 0;
+        font-family: 'Space Grotesk';
+    }
+    .container{
+        display: block;
+    }
+    .left-container{
+         width: 23.438rem;
+         height: 24em;
+    }
+    .right-container{
+        margin-top: 4.25rem;
+        height: fit-content;
+        width: fit-content;
+        margin-right: auto;
+        margin-left:auto ;
+
+    }
+    .back-card{
+        position: relative;
+        top: -16.8em;
+        left:3.6rem;
+        width: fit-content;
+        color: white;
+    }
+    .back-card p{
+        position: absolute;
+        top:6.5em;
+        left: 23.9em;
+        color: white;
+        letter-spacing: 0.065em;
+    }
+    .front-card {
+        position: relative;
+        top: 7.8rem;
+        left:1rem;
+        color:aliceblue;
+        z-index: 2;
+        width: 300px;   
+    }
+    .card-number{
+        position: absolute;
+        top: 3.563em;
+        left: 1.8em;
+        font-size: 1.8em;
+        letter-spacing: 0.065em;
+    }
+    .name-date{
+    display: inline-flex;
+    gap: 5.313rem; 
+    width: fit-content;
+    position: relative;
+    top: -3.938em;
+    left: 1.875em;
+    font-size: 1.2em;
+    font-weight: 200;
+    letter-spacing: 0.065em;
+    text-transform: uppercase;
+    }
+    .circle{
+    position: absolute;
+    top:1.863em;
+    left: 1.875em;
+      }
+    .circle img{
+        width: 5.7em;
+    }
+    #front-card{
+         width:29em;
+    }
+    #back-card{
+        width:30em;
+    }
+    .section-1 input{
+        width: 326px;
+        height: 2.7rem;
+    }
+    .section-2 input{
+        height: 2.7rem;
+        width: 326px;
+    }
+    .section-3 {
+        gap: 1px;
+        display: flex;
+        border: none black;
+        width: 320px;
+        justify-content: space-between;
+    }
+    .exp-1 input{
+        width: 60px;
+        padding-left: 12px;
+    }
+    .section-4 input{
+        color: aliceblue;
+        width: 351px;
+        height: 3.5rem;
+        border-radius: 10px;
+        border: solid hsl(279, 6%, 55%) 1px;
+        background-color: hsl(278, 68%, 11%);
+    }
+    fieldset{
+        width: fit-content;
+    }
+    .cvc-1 input{
+           width: 158px;
+    margin-right: -22px;
+    }
+    .section-4 {
+    border: none;
+    margin-top: 16px;
+    width: fit-content;
+    padding:0;
+    } 
+}
