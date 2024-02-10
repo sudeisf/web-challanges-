@@ -7,6 +7,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap">
+  <script src=".. /interactive-card-details-form-main/js/main.js" defer></script>
   
   <title>Frontend Mentor | Interactive card details form</title>
 
@@ -25,40 +26,54 @@
       <img src="../interactive-card-details-form-main/images/card-logo.svg" alt="">
     </div>
       <img src="../interactive-card-details-form-main/images/bg-card-front.png" alt="pg1" id="front-card">
-      <p class="card-number">0000 0000 0000 0000</p>
+      <p class="card-number" id="card-n">0000 0000 0000 0000</p>
       <div class="name-date">
-        <p class="card-name">Jane Appleseed</p>
-        <p class="Date">00/00</p>
+        <p class="card-name" id="card-name">Jane Appleseed</p>
+        <p class="Date"><span id="mm">00</span>/<span id="yy">00</span></p>
       </div>
-     
   </div>
   <div class="back-card">
-    <p> 000</p>
+    <p id="cvc1">000</p>
     <img src="../interactive-card-details-form-main/images/bg-card-back.png" alt="pg2" id="back-card">
   </div>
+</div>
+
+
+
+
+<div class="successful">
+    <div class="logo">
+      <img src="../interactive-card-details-form-main/images/icon-complete.svg" alt="icon-complete">
+    </div>
+    <h1>Thank you!</h1>
+    <h5>we've added your card details</h5>
+    <fieldset class="section-suc">
+      <input type="submit" class="confirm-btn" value="Continue" id="continueB" >
+    </fieldset>
+    
 </div>
 <div class="right-container">
   <form action="">
 
     <fieldset class="section-1">
       <label for="Cardholder-Name">Cardholder Name</label>
-      <input type="text"  id="inpu-1" placeholder="e.g. Jane Appleseed" required>
+      <input type="text"  id="input1" placeholder="e.g. Jane Appleseed" required>
     </fieldset>
 
   <fieldset class="section-2">
     <label for="Card-Number">Card Number</label>
-    <input type="text"  id="input-2" placeholder="e.g. 1234 5678 9123 0000" required>
+    <input type="text"  id="input2" placeholder="e.g. 1234 5678 9123 0000" required>
   </fieldset>
 
   <fieldset class="section-3">
     <div class="exp-1">
       <label for="Exp-Date">Exp. Date (MM/YY)</label>
     <input type="text"  id="input0" placeholder="MM" required>
-    <input type="text"  id="input0" placeholder="YY" required>
+    <input type="text"  id="input01" placeholder="YY" required>
     </div>
     
     <div class="cvc-1">
-      <label for="Cardholder-Name">CVC</label>
+      <label for="input3">CVC</label>
     <input type="text" id="input3" placeholder="e.g. 123" required>
     </div>
     
@@ -67,7 +82,7 @@
   
 
   <fieldset class="section-4">
-    <input type="submit" class="confirm-btn" value="Confirm" readonly>
+    <input type="submit" class="confirm-btn" value="Confirm" readonly id="conf">
   </fieldset>
 
   </form>

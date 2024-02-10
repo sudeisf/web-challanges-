@@ -4,7 +4,7 @@
 body{
     padding:0;
     margin: 0;
-    background-color: hsla(270, 3%, 87%, 0.368);
+    background-color: hsla(0, 0%, 100%, 0.368);
     font-family: 'Space Grotesk';
     font-size: 16px;
  
@@ -25,6 +25,7 @@ body{
 }
 
 .right-container{
+    display: flex;  /*flex*/
    height: fit-content;
    margin-left: auto;
    margin-right: 12.5rem;
@@ -163,11 +164,12 @@ label{
 }
 .section-4 input{
     color: aliceblue;
-    width: 25.625rem;
+    width: 26.825rem;
     height: 2.5rem;
     border-radius: .313rem;
     border: solid hsl(279, 6%, 55%) 1px;
     background-color: hsl(278, 68%, 11%);
+    margin-left: -0.5em;
 }
 .cvc-1 input::placeholder{
     font-size: 1rem;
@@ -194,7 +196,7 @@ label{
     letter-spacing: 0.063rem;
 }
 label{
-    padding-bottom:.313rem ;
+    padding-bottom:.7rem ;
 }
 input[type=text]{
    padding-left: 12px;
@@ -316,6 +318,7 @@ form fieldset{
     .section-4 input{
         color: aliceblue;
         width: 351px;
+            margin-left: 1px;
         height: 3.5rem;
         border-radius: 10px;
         border: solid hsl(279, 6%, 55%) 1px;
@@ -334,4 +337,70 @@ form fieldset{
     width: fit-content;
     padding:0;
     } 
+}
+
+
+.successful{
+ display: none;
+ flex-direction:column;
+ margin:auto;
+ text-align: center;
+ padding: 0;
+}
+.successful h1{
+    font-size: 1.9rem;
+    text-transform: uppercase;
+    letter-spacing: .075em;
+    font-weight: 300;
+    margin: 0;
+    margin-top:1.8rem ;
+}
+.successful h5{
+  color: hsl(270, 4%, 63%);
+   font-weight: 100;
+   font-size: 1rem;
+   text-transform: capitalize;
+   margin: 0;
+   margin-top: 0.56rem;
+   margin-bottom: 2rem;
+}
+.section-suc{
+    border: none;
+}
+.section-suc input[type ="submit"]{
+    height: 50px; 
+    width: 350px;
+     background-color: rgb(3, 3, 3); 
+     color: rgb(248, 250, 251); 
+     font-family: Space Grotesk;
+      border: none;
+       border-radius: 10px; 
+       font-weight: 300; 
+       font-size: 16px;
+}
+@media (width < 376px) {
+     .successful{
+       /* display: none;/*block */
+       margin-top: 5rem;
+       margin-left: auto;
+       margin-right: auto;
+     }
+     .section-suc h1{
+        font-size: 0.8em;
+     }
+     .section-suc h5{
+        font-size: 0.6em;
+     }
+     .logo img{
+        width: 5rem;
+     }
+     .section-suc input[type="submit"]{
+        color: aliceblue;
+        width: 21rem;
+        height: 3.5rem;
+        border-radius: 10px;
+        border: solid hsl(279, 6%, 55%) 1px;
+        background-color: hsl(278, 68%, 11%);
+            margin-left: 9px;
+    }
 }
